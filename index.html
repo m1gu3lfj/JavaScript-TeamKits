@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">  
+<title>Team kits</title>
+</head>
+<body>
+    <script src="src/teamkits.js"></script>
+    <script src="src/kitsvalidator.js"></script>
+    <script src="src/images.js"></script>
+    <script src="src/display.js"></script>
+
+    <h1 align="center">League Teams</h1>
+    <table border="solid" align="center">
+        <tr>
+            <th width="200" align="center">
+                Select home team:
+            </th>
+            <th width="200" align="center">
+                Select away team:
+            </th>
+        </tr>
+        <tr>
+            <td align="center">    
+                <select id="hometeam">
+                    <option value="1">Real Madrid</option>
+                    <option value="2">Milan</option>
+                    <option value="3">Liverpool</option>
+                    <option value="4">Bayern München</option>
+                    <option value="5">Barcelona</option>
+                    <option value="6">Ajax</option>
+                    <option value="7">Inter</option>
+                    <option value="8">Manchester United</option>
+                    <option value="9">Juventus</option>
+                </select>
+            </td>
+            <td align="center">    
+                <select id="awayteam">
+                    <option value="1">Real Madrid</option>
+                    <option value="2">Milan</option>
+                    <option value="3">Liverpool</option>
+                    <option value="4">Bayern München</option>
+                    <option value="5">Barcelona</option>
+                    <option value="6">Ajax</option>
+                    <option value="7">Inter</option>
+                    <option value="8">Manchester United</option>
+                    <option value="9">Juventus</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td align="center">
+                Home team kit:
+            </td>
+            <td align="center">
+                Away team kit:
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <img id="homekit" height="300" width="200">
+            </td>
+            <td align="center">
+                <img id="awaykit" height="300" width="200">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div border="solid" align="center">
+        <input id="showkits" type="button" value="Show kits" onclick="displayKits()">
+    </div>
+</body>
+</html>
